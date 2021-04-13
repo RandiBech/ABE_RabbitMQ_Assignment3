@@ -1,0 +1,12 @@
+{
+  "name": "direct-server",
+  "version": "0.0.0",
+  "description": "DirectServer",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "amqplib": "^0.7.1"
+  }
+}

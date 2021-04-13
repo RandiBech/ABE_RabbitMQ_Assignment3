@@ -1,0 +1,3 @@
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\DirectServer\obj\Debug\DirectServer.njsprojAssemblyReference.cache
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\DirectServer\obj\Debug\DirectServer.njsproj.CoreCompileInputs.cache
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\DirectServer\bin\Microsoft.NodejsTools.WebRole.dll

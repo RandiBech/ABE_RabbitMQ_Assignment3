@@ -1,0 +1,13 @@
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\bin\Debug\netcoreapp3.1\ExternalServer.exe
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\bin\Debug\netcoreapp3.1\ExternalServer.deps.json
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\bin\Debug\netcoreapp3.1\ExternalServer.runtimeconfig.json
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\bin\Debug\netcoreapp3.1\ExternalServer.runtimeconfig.dev.json
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\bin\Debug\netcoreapp3.1\ExternalServer.dll
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\bin\Debug\netcoreapp3.1\ExternalServer.pdb
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\obj\Debug\netcoreapp3.1\ExternalServer.csprojAssemblyReference.cache
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\obj\Debug\netcoreapp3.1\ExternalServer.AssemblyInfoInputs.cache
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\obj\Debug\netcoreapp3.1\ExternalServer.AssemblyInfo.cs
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\obj\Debug\netcoreapp3.1\ExternalServer.csproj.CoreCompileInputs.cache
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\obj\Debug\netcoreapp3.1\ExternalServer.dll
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\obj\Debug\netcoreapp3.1\ExternalServer.pdb
+C:\Users\randi\source\repos\ABE_advancedBackend\ABE_Assignment3_RabbitMQ\HotelBookingRabbitMQ\ExternalServer\obj\Debug\netcoreapp3.1\ExternalServer.genruntimeconfig.cache
