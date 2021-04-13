@@ -42,7 +42,7 @@ namespace ExternalServer
 
         private static string GetMessage(string[] args)
         {
-            return ((args.Length > 0) ? string.Join(" ", args) : " default should not be here");
+            return ((args.Length > 0) ? string.Join(" ", args) : "Rabbit Hotel room 1");
         }
     }
 }
