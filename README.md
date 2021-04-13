@@ -5,6 +5,12 @@ Der er opsat dummyData (seedData), men har ikke fået forbindelse til vores data
 
 RabbitMQ:
 Simpelt sat op mellem DirectServer og Database. Det virker med at sende imellem her.
+simpelt sat op mellem ExternalServer og Database. Det virker med at sende imellem her.
+
 Jeg har brugt lokal server med Docker.
 
 docker commando: docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+
+Tilføjer .net console applikation ConfirmReservation til at kunne modtage confirms fra Database, og gemme dem i en logfil.
+
+- denne er ikke sat op endnu
