@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Pj56LVbkv71vDh9uoIMH5jJjCf4mhg9Wdjwl9y6pVB697ToRQCUXbS4jhwqz2Oi5tjzhvObgXCPzrOfl3oasKQ==",
+  "dgSpecHash": "KOZYkJIzAMlXos/QpVjtK2PWOqi+0iMG4KbEZouuCsYYq2Iuhr7fuLJcLlT8emznhDWSukwKPbDKnmnAJet/Pg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\randi\\source\\repos\\ABE_advancedBackend\\ABE_Assignment3_RabbitMQ\\HotelBookingRabbitMQ\\ExternalServer\\ExternalServer.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mads\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\Mads\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Mads\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+  ],
   "logs": []
 }
