@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KOZYkJIzAMlXos/QpVjtK2PWOqi+0iMG4KbEZouuCsYYq2Iuhr7fuLJcLlT8emznhDWSukwKPbDKnmnAJet/Pg==",
+  "dgSpecHash": "HluqL2m34X1ByQAVXWXBV5keMtsM75qevd/0CxRd1mGl8blXKP4bAT31klnwo/OY0GoPae0MtEe5XtaHkxDJmg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
+  "projectFilePath": "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mads\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
     "C:\\Users\\Mads\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

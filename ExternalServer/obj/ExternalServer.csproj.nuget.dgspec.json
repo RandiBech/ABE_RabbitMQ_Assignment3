@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj": {}
+    "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj": {
+    "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
+        "projectUniqueName": "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
         "projectName": "ExternalServer",
-        "projectPath": "C:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
+        "projectPath": "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
         "packagesPath": "C:\\Users\\Mads\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\obj\\",
+        "outputPath": "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
