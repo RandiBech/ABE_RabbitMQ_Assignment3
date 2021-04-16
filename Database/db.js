@@ -61,6 +61,6 @@ async function createDummyData() {
 
 }
 
-createDummyData(); 
+// createDummyData(); 
 
 require('./models/hotel');
