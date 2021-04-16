@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "HluqL2m34X1ByQAVXWXBV5keMtsM75qevd/0CxRd1mGl8blXKP4bAT31klnwo/OY0GoPae0MtEe5XtaHkxDJmg==",
+  "dgSpecHash": "T8Uj/X7ff9/oQ8V05Blr6li7aSi20ZySyTkPQ4efAWYhJ/1Zax4bVzjaZDEiYllUedaCwQP1ND6TW/Qi0lYDGw==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
+  "projectFilePath": "c:\\Users\\randi\\source\\repos\\ABE_advancedBackend\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mads\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
-    "C:\\Users\\Mads\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\Mads\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+    "C:\\Users\\randi\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
+    "C:\\Users\\randi\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\randi\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }

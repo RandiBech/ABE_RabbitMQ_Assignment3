@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const hotels = require('../hotels');
-var Hotel = require('./hotel');
+const rabbitHotels = require('./seedData');
+var Hotel = require('./models/hotel');
 
 
 let dbUrl = 'mongodb+srv://dbMads:Rf0e3duLljH7u4fH@teamabecluster.gk0mk.mongodb.net/HotelFour';
@@ -61,6 +61,6 @@ async function createDummyData() {
 
 }
 
- createDummyData(); 
+createDummyData(); 
 
-require('./hotel');
+require('./models/hotel');

@@ -5,7 +5,7 @@ const hotelSchema = new mongoose.Schema({
     rooms: [
         {
             roomNo: Number,
-            reservation: boolean
+            reservation: Boolean
         }
     ]
 });
