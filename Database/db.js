@@ -46,6 +46,18 @@ process.on('SIGINT', () => {
 });
 
 
+async function findDummyData() {
+
+    try {
+        let savedDocument = await Hotel.find({});
+        console.log(savedDocument);
+    } catch (err) {
+        console.log(err)
+    }
+
+}
+//findDummyData();
+
 async function createDummyData() {
 
     const db = mongoose.connection;
@@ -62,5 +74,3 @@ async function createDummyData() {
 }
 
 // createDummyData(); 
-
-require('./models/hotel');

@@ -1,10 +1,14 @@
 var amqp = require('amqplib/callback_api');
 
-amqp.connect('amqp://localhost', function(error0, connection){
+var hotelCollection = require('./models/hotel');
+
+var reservationController = require('./reservation_controller');
+
+amqp.connect('amqp://localhost', async function(error0, connection){
     if(error0){
         throw error0;
     }
-    connection.createChannel(function(error1, channel){
+    connection.createChannel( async function(error1, channel){
         if(error1){
             throw error1;
         }
@@ -15,9 +19,16 @@ amqp.connect('amqp://localhost', function(error0, connection){
         });
         console.log("[*] Waiting for messages in %s. To exit press CTRL+C", queue);
 
-        channel.consume(queue, function (msg) {
+        channel.consume(queue, async function (msg) {
             console.log("[x] Received %s", msg.content.toString());
-            // kald metode til undersøge om værelse er ledigt (reservation_controller)
+            // var hotels = await hotelCollection.find({});
+            // console.log(hotels);
+            const request = {
+                hotelName: "Rabbit Hotel",
+                roomNo: "2"
+            }
+            await reservationController.handleReservationRequest(request);
+            //kald metode til undersøge om værelse er ledigt (reservation_controller)
         }, {
             noAck: true
         });
