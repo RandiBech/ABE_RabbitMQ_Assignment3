@@ -28,8 +28,8 @@ namespace ConfirmResevation
                 {
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
-                    (message.Contains("Not")) ? Console.WriteLine("Reservation not possible. Room is not available.")
-                    : Console.WriteLine(" [x] Received Reservation confirmation. Resevation at {0} confirmed", message);
+                    (message.Contains("confirm")) ? Console.WriteLine("[x] Received Reservation confirmation. Resevation at {0} confirmed", message) :
+                     Console.WriteLine("Reservation not possible. Room is not available.");
                 };
             }
 
