@@ -15,7 +15,7 @@ namespace ConfirmResevation
             using (var channel = connection.CreateModel())
             {
                 channel.QueueDeclare(
-                    queue: "confirms",
+                    queue: "confirmation",
                     durable: false,
                     exclusive: false,
                     autoDelete: false,
@@ -34,7 +34,7 @@ namespace ConfirmResevation
             }
 
             channel.BasicConsume(
-                queue: "confirms",
+                queue: "confirmation",
                 autoAck: true,
                 consumer: consumer);
 
