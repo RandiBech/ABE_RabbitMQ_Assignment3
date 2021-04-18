@@ -13,4 +13,5 @@ docker commando: docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672
 
 Tilføjer .net console applikation ConfirmReservation til at kunne modtage confirms fra Database, og gemme dem i en logfil.
 
-- denne er ikke sat op endnu
+Har i Database projektet added sendConfirmation.js -> der sætter en "Confirmation" queue op.
+i reservation_controller.js kaldes sendCOnfirmation() for at sende en besked til denne Confirmation queue. - mangler at få det tested ordentligt.
