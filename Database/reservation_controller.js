@@ -1,6 +1,6 @@
 require('./db');
 var hotelCollection = require('./models/hotel');
-var confirmationQueue = require('./sendConfirmation');
+const { sendConfirmation } = require('./sendConfirmation');
 
 //metode til håndtering af request om reservation
 //-- undersøg om værelse er ledigt
@@ -16,12 +16,15 @@ module.exports.handleReservationRequest = async function (req, res) {
 		let room = hotel.rooms.find(function (room) {
 			if (room.roomNo === roomNumber) return true;
 		});
+		var message = hotel.name + ' ' + room.roomNo;
 		if (room.reservation) {
 			console.log('The room is not available');
 			//TODO: ved ikke om vi skal sende statuskoder?
 			// res.status(201).json({
 			//     "title": "Room not available"
 			// })
+			message += ': The room is not available';
+			sendConfirmation(message);
 		} else {
 			console.log('The room is free to reservate');
 			//TODO: Kan ikke få fat på id'et!!!
@@ -36,13 +39,13 @@ module.exports.handleReservationRequest = async function (req, res) {
 			);
 			if (updatedRoom) {
 				//TODO: send confirmation til ConfirmReservation
-				var message = '';
-				confirmationQueue.sendConfirmation(message);
+				message += ': Successfully booked';
+				sendConfirmation(message);
 				return console.log('Succesfully booked');
 			} else {
 				//TODO: send confirmation til ConfirmReservation
-				var message = '';
-				confirmationQueue.sendConfirmation(message);
+				message += ': server error';
+				sendConfirmation(message);
 
 				console.log('unknown server error');
 			}
