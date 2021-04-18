@@ -32,8 +32,6 @@ module.exports.handleReservationRequest = async function (req, res) {
 			} catch {
 				console.log('unknown server error');
 			}
-			);
-			if (updatedRoom) {
 			//TODO: send confirmation til ConfirmReservation
 			var message = '';
 			confirmationQueue.sendConfirmation(message);
