@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {
+    "net5.0": {
       "RabbitMQ.Client/6.2.1": {
         "type": "package",
         "dependencies": {
@@ -104,36 +104,34 @@
     }
   },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": [
+    "net5.0": [
       "RabbitMQ.Client >= 6.2.1"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\randi\\.nuget\\packages\\": {}
+    "/home/alexander/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\randi\\source\\repos\\ABE_advancedBackend\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
+      "projectUniqueName": "/home/alexander/Documents/ABE/ABE_RabbitMQ_Assignment3/ExternalServer/ExternalServer.csproj",
       "projectName": "ExternalServer",
-      "projectPath": "c:\\Users\\randi\\source\\repos\\ABE_advancedBackend\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
-      "packagesPath": "C:\\Users\\randi\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\randi\\source\\repos\\ABE_advancedBackend\\ABE_RabbitMQ_Assignment3\\ExternalServer\\obj\\",
+      "projectPath": "/home/alexander/Documents/ABE/ABE_RabbitMQ_Assignment3/ExternalServer/ExternalServer.csproj",
+      "packagesPath": "/home/alexander/.nuget/packages/",
+      "outputPath": "/home/alexander/Documents/ABE/ABE_RabbitMQ_Assignment3/ExternalServer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\randi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/alexander/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "netcoreapp3.1"
+        "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "projectReferences": {}
         }
       },
@@ -144,8 +142,8 @@
       }
     },
     "frameworks": {
-      "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
+      "net5.0": {
+        "targetAlias": "net5.0",
         "dependencies": {
           "RabbitMQ.Client": {
             "target": "Package",
@@ -167,7 +165,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.201/RuntimeIdentifierGraph.json"
       }
     }
   }

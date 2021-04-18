@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "HluqL2m34X1ByQAVXWXBV5keMtsM75qevd/0CxRd1mGl8blXKP4bAT31klnwo/OY0GoPae0MtEe5XtaHkxDJmg==",
+  "dgSpecHash": "yOIo70Xs4C3eT3qQkeKgO8MBzWnmqGJPIf5F9SOLKOvCz6lChyS99nuEoI0On/IVwX6THy5PoIJ4twazHI+sFA==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
+  "projectFilePath": "/home/alexander/Documents/ABE/ABE_RabbitMQ_Assignment3/ExternalServer/ExternalServer.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mads\\.nuget\\packages\\rabbitmq.client\\6.2.1\\rabbitmq.client.6.2.1.nupkg.sha512",
-    "C:\\Users\\Mads\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
-    "C:\\Users\\Mads\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512"
+    "/home/alexander/.nuget/packages/rabbitmq.client/6.2.1/rabbitmq.client.6.2.1.nupkg.sha512",
+    "/home/alexander/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/home/alexander/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
   ],
   "logs": []
 }
