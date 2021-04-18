@@ -20,17 +20,11 @@ module.exports.handleReservationRequest = async function (req, res) {
 		var message = hotel.name + ' ' + room.roomNo;
 		if (room.reservation) {
 			console.log('The room is not available');
-			var message = '';
-			confirmationQueue.sendConfirmation(message);
-			//TODO: ved ikke om vi skal sende statuskoder?
-			// res.status(201).json({
-			//     "title": "Room not available"
-			// })
 			message += ': The room is not available';
 			sendConfirmation(message);
 		} else {
 			console.log('The room is free to reservate');
-			
+
 			//TODO: Kan ikke få fat på id'et!!!
 			const updatedRoom = await hotelCollection.findByIdAndUpdate(
 				room._id,
@@ -42,13 +36,10 @@ module.exports.handleReservationRequest = async function (req, res) {
 				}
 			);
 			if (updatedRoom) {
-				//TODO: send confirmation til ConfirmReservation
 				message += ': Successfully booked';
 				sendConfirmation(message);
 				return console.log('Succesfully booked');
-				
 			} else {
-				//TODO: send confirmation til ConfirmReservation
 				message += ': server error';
 				sendConfirmation(message);
 
@@ -57,11 +48,5 @@ module.exports.handleReservationRequest = async function (req, res) {
 		}
 	} catch (error) {
 		console.log(error);
-		//TODO: ved ikke om vi skal sende statuskoder?
-
-		// res.status(400).json({
-		//     "title": "Unable to connect to database",
-		//     "detail": error
-		// })
 	}
 };
