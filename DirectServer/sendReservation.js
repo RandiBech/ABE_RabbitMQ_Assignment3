@@ -9,7 +9,7 @@ amqp.connect('amqp://localhost', function (error0, connection) {
 			throw error1;
 		}
 		var queue = 'reservation';
-		var msg = 'Rabbit Hotel room 1';
+		var msg = process.argv.slice(2).join(' ') || 'Rabbit Hotel 1';
 
 		channel.assertQueue(queue, {
 			durable: false,

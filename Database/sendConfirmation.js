@@ -2,6 +2,10 @@ var amqp = require('amqplib/callback_api');
 
 module.exports = { sendConfirmation };
 
+//test strings
+// const msg = 'Rabbit Hotel room 1 : Successfully booked';
+// const msg = 'Rabbit Hotel room 1 : The room is not available';
+
 async function sendConfirmation(msg) {
 	amqp.connect('amqp://localhost', function (error0, connection) {
 		if (error0) {
@@ -14,6 +18,11 @@ async function sendConfirmation(msg) {
 			var queue = 'confirmation';
 
 			var message = msg;
+			if (msg.includes('Successfully')) {
+				message += ': Reservation confirmed';
+			} else {
+				message += ': Reservation denied';
+			}
 
 			channel.assertQueue(queue, {
 				durable: false,
@@ -28,3 +37,5 @@ async function sendConfirmation(msg) {
 		}, 500);
 	});
 }
+
+// sendConfirmation(msg); // test sendConfirmation()

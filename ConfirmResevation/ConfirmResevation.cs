@@ -28,19 +28,21 @@ namespace ConfirmResevation
                 {
                     var body = ea.Body.ToArray();
                     var message = Encoding.UTF8.GetString(body);
-                    (message.Contains("confirm")) ? Console.WriteLine("[x] Received Reservation confirmation. Resevation at {0} confirmed", message) :
-                     Console.WriteLine("Reservation not possible. Room is not available.");
+                    var confirmationMsg = message.Contains("confirmed") ? "Received Reservation confirmation: " :
+                    "Reservation denied. Room is not available at: ";
+
+                    Console.WriteLine(confirmationMsg + message);
                 };
+
+                channel.BasicConsume(
+                    queue: "confirmation",
+                    autoAck: true,
+                    consumer: consumer);
+
+                Console.WriteLine("Press [enter] to exit.");
+                Console.ReadLine();
+
             }
-
-            channel.BasicConsume(
-                queue: "confirmation",
-                autoAck: true,
-                consumer: consumer);
-
-            Console.WriteLine("Press [enter] to exit.");
-            Console.ReadLine();
-
         }
     }
 }
