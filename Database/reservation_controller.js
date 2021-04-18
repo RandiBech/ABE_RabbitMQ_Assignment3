@@ -14,7 +14,7 @@ module.exports.handleReservationRequest = async function (req, res) {
 	try {
 		let hotel = await hotelCollection.findOne({ name: hotelName });
 		let room = hotel.rooms.find(function (room) {
-			if (room.roomNo === roomNumber) return true;
+			return room.roomNo === roomNumber;
 		});
 		if (room.reservation) {
 			console.log('The room is not available');
@@ -23,29 +23,21 @@ module.exports.handleReservationRequest = async function (req, res) {
 			//     "title": "Room not available"
 			// })
 		} else {
-			console.log('The room is free to reservate');
-			//TODO: Kan ikke få fat på id'et!!!
-			const updatedRoom = await hotelCollection.findByIdAndUpdate(
-				room._id,
-				{
-					reservation: true,
-				},
-				{
-					new: true,
-				}
-			);
-			if (updatedRoom) {
-				//TODO: send confirmation til ConfirmReservation
-				var message = '';
-				confirmationQueue.sendConfirmation(message);
-				return console.log('Succesfully booked');
-			} else {
-				//TODO: send confirmation til ConfirmReservation
-				var message = '';
-				confirmationQueue.sendConfirmation(message);
-
+			console.log('The room is free to reserve');
+			console.log('RoomID: ' + room._id)
+			console.log('RoomNumber: ' + room.roomNo)
+			try{
+				room.reservation = true;
+				hotel.save();	
+			} catch {
 				console.log('unknown server error');
 			}
+			);
+			if (updatedRoom) {
+			//TODO: send confirmation til ConfirmReservation
+			var message = '';
+			confirmationQueue.sendConfirmation(message);
+			return console.log('Succesfully booked room ' + room.roomNo);
 		}
 	} catch (error) {
 		console.log(error);
