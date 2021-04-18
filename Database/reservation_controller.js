@@ -13,17 +13,21 @@ module.exports.handleReservationRequest = async function (req, res) {
 	const roomNumber = parseInt(req.roomNo);
 	try {
 		let hotel = await hotelCollection.findOne({ name: hotelName });
+		console.log('hotel', hotel);
 		let room = hotel.rooms.find(function (room) {
 			if (room.roomNo === roomNumber) return true;
 		});
 		if (room.reservation) {
 			console.log('The room is not available');
+			var message = '';
+			confirmationQueue.sendConfirmation(message);
 			//TODO: ved ikke om vi skal sende statuskoder?
 			// res.status(201).json({
 			//     "title": "Room not available"
 			// })
 		} else {
 			console.log('The room is free to reservate');
+			
 			//TODO: Kan ikke få fat på id'et!!!
 			const updatedRoom = await hotelCollection.findByIdAndUpdate(
 				room._id,
@@ -39,11 +43,9 @@ module.exports.handleReservationRequest = async function (req, res) {
 				var message = '';
 				confirmationQueue.sendConfirmation(message);
 				return console.log('Succesfully booked');
+				
 			} else {
 				//TODO: send confirmation til ConfirmReservation
-				var message = '';
-				confirmationQueue.sendConfirmation(message);
-
 				console.log('unknown server error');
 			}
 		}

@@ -1,15 +1,24 @@
 # ABE_RabbitMQ_Assignment3
 
-Der er lavet ny collection til databasen. Nyt navn: "rabbitHotels". Det er gjort, da jeg har fjerne nogle props for at gøre det mere simpelt.
-Der er opsat dummyData (seedData), men har ikke fået forbindelse til vores database endnu, så det ligger ikke på clusteret.
+For this project a local docker server is used with the command:
+    docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
 
-RabbitMQ:
-Simpelt sat op mellem DirectServer og Database. Det virker med at sende imellem her.
-simpelt sat op mellem ExternalServer og Database. Det virker med at sende imellem her.
+To send reservation request from Direct server call:
+    sendReservation.js <Hotel Name (OBS no numbers)> <Room no. (OBS only the number)>
 
-Jeg har brugt lokal server med Docker.
+To send reservation request from External server call:
+    dotnet run <Hotel Name (OBS no numbers)> <Room no. (OBS only the number)>
 
-docker commando: docker run -it --rm --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+
+-------------Dummy data in db------------------
+Two hotels with eight rooms each:
+    Rabbit Hotel
+    MQ Hotel
+
+
+
+
+-------------- Notes for the team---------------
 
 Tilføjer .net console applikation ConfirmReservation til at kunne modtage confirms fra Database, og gemme dem i en logfil.
 

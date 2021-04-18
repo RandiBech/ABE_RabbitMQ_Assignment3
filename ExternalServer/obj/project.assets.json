@@ -109,23 +109,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mads\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\randi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
+      "projectUniqueName": "c:\\Users\\randi\\source\\repos\\ABE_advancedBackend\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
       "projectName": "ExternalServer",
-      "projectPath": "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
-      "packagesPath": "C:\\Users\\Mads\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Mads\\source\\repos\\ABE\\ABE_RabbitMQ_Assignment3\\ExternalServer\\obj\\",
+      "projectPath": "c:\\Users\\randi\\source\\repos\\ABE_advancedBackend\\ABE_RabbitMQ_Assignment3\\ExternalServer\\ExternalServer.csproj",
+      "packagesPath": "C:\\Users\\randi\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\randi\\source\\repos\\ABE_advancedBackend\\ABE_RabbitMQ_Assignment3\\ExternalServer\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Mads\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\randi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

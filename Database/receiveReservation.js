@@ -19,18 +19,16 @@ amqp.connect("amqp://localhost", function (error0, connection) {
 
     channel.consume(
       queue,
-      function (msg) {
+      async function (msg) {
+        const message = msg.content.toString();
         console.log("[x] Received %s", msg.content.toString());
-        //Test af handleReservationRequest med hardcoded object
-        // const request = {
-        //     hotelName: "Rabbit Hotel",
-        //     roomNo: "2"
-        // }
-        // await reservationController.handleReservationRequest(request);
 
-        // kald metode til undersøge om værelse er ledigt (reservation_controller)
-        // start Event her
-        handleReservationRequest(msg);
+        const messageArray = message.split(/([0-9]+)/);
+        const request = {
+            hotelName: messageArray[0].trim(),
+            roomNo: messageArray[1]
+        }
+        await handleReservationRequest(request);
       },
       {
         noAck: true,
